@@ -1,0 +1,51 @@
+$font-family: "Helvetica, sans-serif";
+$bgcolor: "black";
+
+@import 'normalize.scss';
+
+/* START MY STYLES */
+
+.container {
+	display:flex;
+	height:100vh;
+	justify-content: center;
+	align-items: center;
+	font-family: Helvetica, sans-serif;
+}
+
+.item {
+	text-align: center;
+	flex:1;
+	font-size:8em;
+	color: #00151a;
+}
+
+.animals {
+	font-color: #ff0000;
+	font-weight: bold;
+}
+
+.animal {
+	background-color: $bgcolor;
+	font-family: $font-family;
+}
+
+body {
+	background-color: $bgcolor;
+	font-family: $font-family;
+	background-image: url('../images/wallpaper.jpg');
+	background-size: cover;
+}
+
+#message { 
+	position:absolute;
+	width:100vw;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 2em;
+}
+
+
+/* END MY STYLES */
+
+@import 'animate.scss';
