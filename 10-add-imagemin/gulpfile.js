@@ -8,7 +8,7 @@ const reload = browserSync.reload;
 const nodemon = require("gulp-nodemon");
 
 gulp.task("hello", () => {
-    console.log("howdy partner!");
+	console.log("howdy partner!");
 });
 
 gulp.task("build", () => {
@@ -35,9 +35,9 @@ gulp.task("clean", () => {
 });
 
 gulp.task("sass", () =>
-    gulp.src("app/static/scss/styles.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("build/css/sass")));
+	gulp.src("app/static/scss/styles.scss")
+		.pipe(sass())
+		.pipe(gulp.dest("build/css/sass")));
 
 gulp.task("autoprefixer", () => {
     const postcss = require("gulp-postcss");
