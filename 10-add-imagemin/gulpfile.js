@@ -17,7 +17,8 @@ gulp.task("build", () => {
         "sass",
         "autoprefixer",
         "uncss",
-        "critical");
+        "critical",
+        "imagemin");
 });
 
 gulp.task("watch", ["browserSync", "build"], () => {
@@ -120,6 +121,14 @@ gulp.task("eslint", () => {
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failOnError());
+});
+
+gulp.task("imagemin", () => {
+    const imageMin = require("gulp-imagemin");
+
+    gulp.src("app/static/images/*")
+        .pipe(imageMin())
+        .pipe(gulp.dest("dist/images"));
 });
 
 

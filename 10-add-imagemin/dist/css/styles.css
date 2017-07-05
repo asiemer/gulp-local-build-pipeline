@@ -248,7 +248,7 @@ audio:not([controls]) {
 body {
   background-color: "black";
   font-family: "Helvetica, sans-serif";
-  background-image: url("../images/wallpaper.jpg");
+  background-image: url("/images/wallpaper.jpg");
   background-size: cover; }
 
 #message {
